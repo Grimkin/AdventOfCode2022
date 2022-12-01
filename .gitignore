@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
-/AdventOfCode2022/.vs
-/AdventOfCode2022/out/build/x64-debug
+
+# Build results
+/out
 /.vs

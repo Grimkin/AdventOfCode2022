@@ -1,9 +1,15 @@
-﻿# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
+﻿# CMakeList.txt : CMake project for AdventOfCode2022, include source and define
+# project specific logic here.
 #
-cmake_minimum_required (VERSION 3.8)
 
-project ("AdventOfCode2022")
+find_package(range-v3 REQUIRED)
 
-# Include sub-projects.
-add_subdirectory ("AdventOfCode2022")
+# Add source to this project's executable.
+add_executable (AdventOfCode2022 "main.cpp" "Challenge/Day1.h")
+target_link_libraries(AdventOfCode2022 range-v3::range-v3)
+
+if (CMAKE_VERSION VERSION_GREATER 3.12)
+  set_property(TARGET AdventOfCode2022 PROPERTY CXX_STANDARD 20)
+endif()
+
+# TODO: Add tests and install targets if needed.
