@@ -1,6 +1,7 @@
 ﻿#include "Challenge/Day1.h"
+#include "Challenge/Day2.h"
 
 int main()
 {
-    Day1::execute();
+    Day2::execute();
 }
