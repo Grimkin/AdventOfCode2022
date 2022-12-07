@@ -46,7 +46,7 @@ namespace Day5
             if( line.empty() )
                 break;
 
-            for( int64_t i = 0; i < cargo.size(); i++ ) {
+            for( int64_t i = 0; i < std::ssize( cargo ); i++ ) {
                 const auto idx = ( 4 * i ) + 1;
 
                 const auto value = line[ idx ];
