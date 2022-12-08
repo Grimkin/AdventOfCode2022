@@ -5,8 +5,9 @@
 #include "Challenge/Day5.h"
 #include "Challenge/Day6.h"
 #include "Challenge/Day7.h"
+#include "Challenge/Day8.h"
 
 int main()
 {
-    Day7::execute();
+    Day8::execute();
 }
