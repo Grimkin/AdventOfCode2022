@@ -114,7 +114,7 @@ namespace Day8
     int64_t getTopScore( const TreeMap& treeMap, Vec2 pos ) {
         int64_t score = 0;
         auto treeSize = treeMap.get( pos );
-        for( int y = pos.y - 1; y >= 0; y-- )
+        for( int64_t y = pos.y - 1; y >= 0; y-- )
         {
             score++;
             if( treeMap.get( { pos.x, y } ) >= treeSize )
@@ -137,7 +137,7 @@ namespace Day8
     int64_t getLeftScore( const TreeMap& treeMap, Vec2 pos ) {
         int64_t score = 0;
         auto treeSize = treeMap.get( pos );
-        for( int x = pos.x - 1; x >= 0; x-- )
+        for( int64_t x = pos.x - 1; x >= 0; x-- )
         {
             score++;
             if( treeMap.get( { x, pos.y } ) >= treeSize )
