@@ -7,8 +7,9 @@
 #include "Challenge/Day7.h"
 #include "Challenge/Day8.h"
 #include "Challenge/Day9.h"
+#include "Challenge/Day10.h"
 
 int main()
 {
-    Day9::execute();
+    Day10::execute();
 }
