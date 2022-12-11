@@ -97,7 +97,7 @@ namespace Day9
     void updateRope( std::vector<Vec2>& rope, Direction direction, std::set<Vec2>& tailVisits ) {
         rope.front() = getPositionAfterStep( direction, rope.front() );
 
-        for( int64_t i = 1; i < rope.size(); i++ )
+        for( int64_t i = 1; i < std::ssize( rope ); i++ )
             if( !updateRopeElement( rope[ i ], rope[ i - 1 ] ) )
                 return;
 

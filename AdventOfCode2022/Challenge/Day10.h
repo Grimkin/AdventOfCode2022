@@ -75,7 +75,7 @@ namespace Day10
 
     char getScreenValue( int64_t cycle, int64_t X ) {
         if( isDrawn( cycle, X ) )
-            return 219;
+            return char( 219 );
 
         return ' ';
     }
