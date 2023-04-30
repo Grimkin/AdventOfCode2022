@@ -11,8 +11,9 @@
 #include "Challenge/Day11.h"
 #include "Challenge/Day12.h"
 #include "Challenge/Day13.h"
+#include "Challenge/Day14.h"
 
 int main()
 {
-    Day13::execute();
+    Day14::execute();
 }
